@@ -1,0 +1,15 @@
+{
+  "list": [
+    "index.html",
+    "config.js",
+    "favicon.ico",
+    "style/style.min.css",
+    "jspm_packages/system.js",
+    "jspm_packages/system-polyfills.js",
+    "jspm_packages/system-csp-production.js",
+    "jspm_packages/github/FortAwesome/font-awesome@4.5.0/fonts/*",
+    "dist/app-build-*.js",
+    "dist/aurelia-*.js",
+    "dist/vendor-*.js"
+  ]
+}
