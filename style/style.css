@@ -42,6 +42,33 @@
   border-radius: .25rem;
 }
 
+tag .card-header {
+  display: inline-block;
+  cursor: pointer;
+}
+
+tag .card-header {
+  border-right: 1px solid #e5e5e5;
+  border-radius: .25rem 0 !important;
+}
+
+.tag-tools {
+  float: right;
+  padding: 10px 15px;
+}
+
+.tag-tools .fa-edit {
+  color: #26b725;
+}
+
+.tag-tools .fa-clone {
+  color: #0088c3;
+}
+
+.tag-tools .fa-trash-o {
+  color: #c30006;
+}
+
 ai-dialog-overlay.active {
   background-color: #000;
   opacity: .75 !important;

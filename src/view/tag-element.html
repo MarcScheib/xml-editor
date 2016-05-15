@@ -2,8 +2,13 @@
   <require from="view/drop-target.html"></require>
 
   <div class="card">
-    <div class="card-header">
+    <div class="card-header" click.delegate="edit()">
       ${tag.name}
+    </div>
+    <div class="tag-tools">
+      <a href="#" click.delegate="edit()"><i class="fa fa-fw fa-edit"></i></a>
+      <a href="#" click.delegate="clone()"><i class="fa fa-fw fa-clone"></i></a>
+      <a href="#" click.delegate="remove()"><i class="fa fa-fw fa-trash-o"></i></a>
     </div>
     <div class="card-block">
       <drop-target></drop-target>
