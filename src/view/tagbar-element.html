@@ -1,0 +1,17 @@
+<template>
+  <div class="card card-inverse card-dark">
+    <div class="card-block">
+      <h4 class="card-title">Tags</h4>
+      <p class="card-text">Drag the tags and drop them on the editor wherever syntactically possible.</p>
+    </div>
+    <div class="list-group">
+      <div class="list-group-item drag-source" repeat.for="tag of tags">
+        <div>
+          <h4 class="list-group-item-heading">${tag.name}</h4>
+
+          <p class="list-group-item-text">${tag.description}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

@@ -6,14 +6,20 @@ LogManager.setLevel(LogManager.logLevel.debug);
 
 ViewLocator.prototype.convertOriginToViewUrl = function(origin) {
   let moduleId = origin.moduleId;
-  let id = (moduleId.endsWith('.js') || moduleId.endsWith('.ts')) ? moduleId.substring(0, moduleId.length - 3) : moduleId;
+  let id = (moduleId.endsWith('.js')) ? moduleId.substring(0, moduleId.length - 3) : moduleId;
   return id.replace('view-model', 'view') + '.html';
 };
 
 export function configure(aurelia) {
   aurelia.use
     .defaultBindingLanguage()
-    .defaultResources();
+    .defaultResources()
+    .plugin('aurelia-dialog', config => {
+      config.useDefaults();
+      config.settings.lock = true;
+      config.settings.centerHorizontalOnly = true;
+      config.settings.startingZIndex = 1005;
+    });
 
   aurelia.start()
     .then(a => a.setRoot('view-model/editor', document.body));

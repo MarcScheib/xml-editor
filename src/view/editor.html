@@ -1,5 +1,23 @@
 <template>
+  <require from="view-model/tagbar-element"></require>
+  <require from="view-model/document-element"></require>
+  <require from="view-model/document-tools-element"></require>
+
   <nav class="navbar navbar-full navbar-dark bg-inverse">
     <a class="navbar-brand" href="#">XML Editor</a>
   </nav>
+
+  <div class="container-fluid" id="editor-host">
+    <div class="row">
+      <div class="col-lg-3">
+        <tagbar></tagbar>
+      </div>
+      <div class="col-lg-6">
+        <document document.bind="activeDocument"></document>
+      </div>
+      <div class="col-lg-3">
+        <document-tools document.bind="activeDocument"></document-tools>
+      </div>
+    </div>
+  </div>
 </template>

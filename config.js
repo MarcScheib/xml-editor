@@ -16,14 +16,15 @@ System.config({
   map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@1.0.0-beta.1.2.1",
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
+    "aurelia-dialog": "npm:aurelia-dialog@0.6.0",
     "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.2.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.4",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
     "core-js": "npm:core-js@1.2.6",
-    "dragula": "npm:dragula@2.1.2",
-    "font-awesome": "github:FortAwesome/font-awesome@4.6.2",
+    "dragula": "npm:dragula@3.7.0",
+    "font-awesome": "github:FortAwesome/font-awesome@4.6.3",
     "jquery": "github:components/jquery@2.2.1",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.3.0"
@@ -70,6 +71,12 @@ System.config({
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.1",
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2"
+    },
+    "npm:aurelia-dialog@0.6.0": {
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
+      "aurelia-metadata": "npm:aurelia-metadata@1.0.0-beta.1.2.1",
+      "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2",
+      "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.2.7"
     },
     "npm:aurelia-event-aggregator@1.0.0-beta.1.2.1": {
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1"
@@ -173,7 +180,7 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
-    "npm:crossvent@1.5.0": {
+    "npm:crossvent@1.5.4": {
       "child_process": "github:jspm/nodelibs-child_process@0.1.0",
       "custom-event": "npm:custom-event@1.0.0",
       "fs": "github:jspm/nodelibs-fs@0.1.2",
@@ -181,9 +188,9 @@ System.config({
       "process": "github:jspm/nodelibs-process@0.1.2",
       "systemjs-json": "github:systemjs/plugin-json@0.1.2"
     },
-    "npm:dragula@2.1.2": {
+    "npm:dragula@3.7.0": {
       "contra": "npm:contra@1.9.1",
-      "crossvent": "npm:crossvent@1.5.0"
+      "crossvent": "npm:crossvent@1.5.4"
     },
     "npm:inherits@2.0.1": {
       "util": "github:jspm/nodelibs-util@0.1.0"

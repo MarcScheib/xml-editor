@@ -1,0 +1,14 @@
+<template>
+  <ai-dialog>
+    <ai-dialog-header>
+      Generated XML Document
+    </ai-dialog-header>
+    <ai-dialog-body>
+      <pre textcontent="${xml.xml | sanitizeHTML}" style="overflow: auto;"></pre>
+    </ai-dialog-body>
+
+    <ai-dialog-footer>
+      <button click.trigger="controller.ok()">Ok</button>
+    </ai-dialog-footer>
+  </ai-dialog>
+</template>

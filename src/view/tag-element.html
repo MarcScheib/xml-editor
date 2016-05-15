@@ -1,0 +1,14 @@
+<template>
+  <require from="view/drop-target.html"></require>
+
+  <div class="card">
+    <div class="card-header">
+      ${tag.name}
+    </div>
+    <div class="card-block">
+      <drop-target></drop-target>
+      <tag repeat.for="tag of tag.children" tag.bind="tag"></tag>
+      <drop-target if.bind="tag.children.length != 0"></drop-target>
+    </div>
+  </div>
+</template>
