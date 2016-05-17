@@ -19,6 +19,7 @@ System.config({
     "aurelia-dialog": "npm:aurelia-dialog@0.6.0",
     "aurelia-event-aggregator": "npm:aurelia-event-aggregator@1.0.0-beta.1.2.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.4",
+    "aurelia-syntax-highlighter": "npm:aurelia-syntax-highlighter@0.0.3",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
@@ -128,6 +129,10 @@ System.config({
       "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1",
       "aurelia-path": "npm:aurelia-path@1.0.0-beta.1.2.2",
       "aurelia-route-recognizer": "npm:aurelia-route-recognizer@1.0.0-beta.1.2.1"
+    },
+    "npm:aurelia-syntax-highlighter@0.0.3": {
+      "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.4",
+      "prismjs": "npm:prismjs@1.5.0"
     },
     "npm:aurelia-task-queue@1.0.0-beta.1.2.1": {
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2"

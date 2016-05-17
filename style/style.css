@@ -73,3 +73,7 @@ ai-dialog-overlay.active {
   background-color: #000;
   opacity: .75 !important;
 }
+
+:not(pre) > code[class*="language-"], pre[class*="language-"] {
+  background: #fff;
+}

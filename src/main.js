@@ -19,7 +19,8 @@ export function configure(aurelia) {
       config.settings.lock = true;
       config.settings.centerHorizontalOnly = true;
       config.settings.startingZIndex = 1005;
-    });
+    })
+    .plugin('aurelia-syntax-highlighter');
 
   aurelia.start()
     .then(a => a.setRoot('view-model/editor', document.body));
