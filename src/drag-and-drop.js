@@ -3,7 +3,6 @@ import {inject} from 'aurelia-framework';
 import {EventAggregator} from 'aurelia-event-aggregator';
 
 //import {ElementDroppedEvent} from './events';
-import {Device} from './model/device';
 
 @inject(EventAggregator)
 export class DragAndDrop {
@@ -47,12 +46,12 @@ export class DragAndDrop {
       }
 
       dragApi.cancel();
-      //if (parent.accepts(source.element)) {
-      let element = new source.tag.constructor();
-      element.setParent(parent);
-      parent.addChild(element, this.dropPos);
-      //this.eventAggregator.publish(new ElementDroppedEvent(element, parent, this.dropPos));
-      //}
+      if (parent.acceptsTag(source.tag)) {
+        let element = new source.tag.constructor();
+        element.setParent(parent);
+        parent.addChild(element, this.dropPos);
+        //this.eventAggregator.publish(new ElementDroppedEvent(element, parent, this.dropPos));
+      }
     });
   }
 

@@ -3,15 +3,27 @@ export class BaseTag {
   description;
   parent;
   children;
+  acceptTags;
 
   constructor(name, description) {
     this.name = name;
     this.description = description;
     this.children = [];
+    this.acceptTags = [];
   }
 
   addChild(element, pos) {
     this.children.splice(pos, 0, element);
+  }
+
+  acceptsTag(tag) {
+    for (let i = 0; i < this.acceptTags.length; i++) {
+      if (this.acceptTags[i].name === tag.constructor.name) {
+        return true;
+      }
+    }
+
+    return false;
   }
 
   remove() {
