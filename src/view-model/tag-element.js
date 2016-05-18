@@ -8,4 +8,8 @@ export class Tag {
   remove() {
     this.tag.remove();
   }
+
+  clone() {
+    this.tag.clone();
+  }
 }

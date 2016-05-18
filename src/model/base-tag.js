@@ -23,6 +23,21 @@ export class BaseTag {
     }
   }
 
+  clone() {
+    // Todo: extend cloning
+    let newTag = new this.constructor();
+    newTag.setParent(this.parent);
+
+    let pos = 0;
+    for (let i = 0; i < this.parent.children.length; i++) {
+      if (this.parent.children[i] === this) {
+        pos = i;
+        break;
+      }
+    }
+    this.parent.addChild(newTag, pos + 1);
+  }
+
   setParent(parent) {
     this.parent = parent;
   }
