@@ -48,11 +48,11 @@ export class DragAndDrop {
 
       dragApi.cancel();
       //if (parent.accepts(source.element)) {
-        let element = new Device();
+      let element = new source.tag.constructor();
       element.setParent(parent);
-        //this.eventAggregator.publish(new ElementDroppedEvent(element, parent, this.dropPos));
-      //}
       parent.addChild(element, this.dropPos);
+      //this.eventAggregator.publish(new ElementDroppedEvent(element, parent, this.dropPos));
+      //}
     });
   }
 
