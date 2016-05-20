@@ -4,10 +4,10 @@
   <div class="card card-inverse card-dark">
     <div class="card-block">
       <h4 class="card-title">Tags</h4>
-      <p class="card-text">Drag the tags and drop them on the editor wherever syntactically possible.</p>
+      <p class="card-text" if.bind="help">Drag the tags and drop them on the editor wherever syntactically possible.</p>
     </div>
     <div class="list-group">
-      <tagbar-tag tag.bind="tag" repeat.for="tag of tags" containerless></tagbar-tag>
+      <tagbar-tag help.bind="help" tag.bind="tag" repeat.for="tag of tags" containerless></tagbar-tag>
     </div>
   </div>
 </template>
