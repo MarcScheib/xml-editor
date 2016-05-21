@@ -6,6 +6,7 @@ export class MonitorOverride extends BaseTag {
 
   constructor() {
     super('<monitor-override>', 'Allows to customize monitors to fit the users\' needs.');
+    this.monitor = new Monitor();
   }
 
   getXML() {

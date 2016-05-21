@@ -1,0 +1,21 @@
+<template>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Monitor Properties</h4>
+      <div class="card-text">
+        <div class="form-group">
+          <label for="filtertype">Filter by Type</label>
+          <input type="text" class="form-control" id="filtertype" placeholder="Filter by Type" value.bind="filtertype"
+                 data-toggle="tooltip" title="Filters on the type of the monitor. It is possible to filter on the actual type of the monitor (e.g.
+RTT_AVG) or the type string of the monitor (e.g. Avg Round Trip Time (ms)). If the
+type string is used, the unit has to be omitted.">
+        </div>
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="Inverts the thresholds of the monitors.">
+            <input type="checkbox" checked.bind="inverted"> Inverted
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

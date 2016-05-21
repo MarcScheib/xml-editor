@@ -29,6 +29,7 @@
       </div>
       <div class="col-lg-3">
         <document-tools document.bind="activeDocument"></document-tools>
+        <compose view-model.bind="activeDocument.selectedTag" if.bind="activeDocument && activeDocument.selectedTag"></compose>
       </div>
     </div>
   </div>

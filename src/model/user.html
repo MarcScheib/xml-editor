@@ -1,0 +1,25 @@
+<template>
+  <div class="card">
+    <div class="card-block">
+      <h3 class="card-title">User Properties</h3>
+      <div class="card-text">
+        <div class="form-group">
+          <label for="file">File Name</label>
+          <input type="text" class="form-control" id="file" placeholder="File Name"
+                 value.bind="file" data-toggle="tooltip" title="Name of the CSV file containing the users.">
+        </div>
+        <div class="form-group">
+          <label for="fileencoding">File Encoding</label>
+          <input type="text" class="form-control" id="fileencoding" placeholder="File Encoding"
+                 value.bind="fileencoding" data-toggle="tooltip" title="Encoding of the CSV file.">
+        </div>
+        <div class="form-group">
+          <label for="dbvariable">Database Variable</label>
+          <input type="text" class="form-control" id="dbvariable" placeholder="Database Variable"
+                 value.bind="dbvariable" data-toggle="tooltip"
+                 title="Name of a database variable. It can be used to import users specified in a database table.">
+        </div>
+      </div>
+    </div>
+  </div>
+</template>

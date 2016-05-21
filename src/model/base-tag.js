@@ -13,6 +13,10 @@ export class BaseTag {
     this.acceptTags = [];
   }
 
+  attached() {
+    $('[data-toggle="tooltip"]').tooltip();
+  }
+
   addChild(element, pos) {
     this.children.splice(pos, 0, element);
   }

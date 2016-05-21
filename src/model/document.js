@@ -7,7 +7,7 @@ export class Document {
   selectedTag;
 
   constructor() {
-    this.title = 'Test';
+    this.title = 'Document #1';
     this.root = new Discover();
     this.root.setParent(this);
   }

@@ -1,0 +1,28 @@
+<template>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Device Properties</h4>
+      <div class="card-text">
+        <div class="form-group">
+          <label for="ipAddresses">IP Addresses</label>
+          <input type="text" class="form-control" id="ipAddresses" placeholder="IP Addresses" value.bind="ip"
+                 data-toggle="tooltip" title="IP address or subnet that should be discovered. It is possible to specify multiple addresses
+and/or subnets separated by commas. IPv6 addresses are also supported.">
+        </div>
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="If this is set to true, appropriate measurements for things
+like processors, interfaces or storages are created automatically. If this is set to false, only a ping measurement will be
+created. Defaults to true.">
+            <input type="checkbox" checked.bind="auto"> Auto Measurements
+          </label>
+        </div>
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="If this is set to false, no devices are discovered, but measurements are still created for existing
+devices that are found within the inventory using the given IP address or IP range. Defaults to true.">
+            <input type="checkbox" checked.bind="discover"> Discover Devices
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
