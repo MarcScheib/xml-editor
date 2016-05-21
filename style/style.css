@@ -37,11 +37,15 @@
   cursor: -webkit-grab;
 }
 
-.drop-target {
-  border: 1px dashed #333;
+.drop-target-marker {
+  border: 1px dashed #e5e5e5;
   border-radius: .25rem;
   margin: 1rem;
   padding: 1rem;
+}
+
+tag .card {
+  border-style: dashed;
 }
 
 tag .card-header {
@@ -50,13 +54,23 @@ tag .card-header {
 }
 
 tag .card-header, tag .card-header:first-child {
-  border-right: 1px solid #e5e5e5;
+  border-right: 1px dashed #e5e5e5;
+  border-bottom-style: dashed;
   border-radius: .25rem 0;
 }
 
 tag .card-no-block {
   border-radius: 0 !important;
   border-bottom: 0 !important;
+}
+
+tag .card-selected {
+  border-color: #0275d8;
+}
+
+tag .card-selected > .card-header {
+  background-color: #0275d8;
+  color: #fff;
 }
 
 .tag-tools {

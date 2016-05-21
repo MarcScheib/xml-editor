@@ -1,6 +1,6 @@
 <template>
-  <div class="card">
-    <div class="card-header ${!tag.acceptTags.length ? 'card-no-block' : ''} ${tag.isSelected ? 'card-primary' : ''}" click.delegate="edit()">
+  <div class="card ${tag.isSelected ? 'card-selected' : ''}">
+    <div class="card-header ${!tag.acceptTags.length ? 'card-no-block' : ''}" click.delegate="edit()">
       ${tag.name}
     </div>
     <div class="tag-tools">
