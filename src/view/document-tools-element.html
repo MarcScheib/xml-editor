@@ -9,9 +9,25 @@
       <button class="btn btn-success btn-block" click.delegate="generateXML()">Generate XML</button>
     </div>
   </div>
-  <div class="row">
+  <div class="row p-b-1">
     <div class="col-lg-12">
       <button class="btn btn-danger btn-block" click.delegate="deleteDocument()" disabled>Delete Document</button>
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-lg-12">
+      <div class="card card-inverse card-dark">
+        <div class="card-block">
+          <h3 class="card-title">Document Properties</h3>
+          <div class="card-text">
+            <div class="form-group">
+              <label for="documentTitle">Document Title</label>
+              <input type="text" class="form-control" id="documentTitle" placeholder="Document Title"
+                     value.bind="document.title">
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </template>
