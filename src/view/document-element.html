@@ -1,12 +1,11 @@
 <template>
-  <require from="view/drop-target.html"></require>
   <require from="view-model/tag-element"></require>
 
   <div class="card card-block">
     <h3 class="card-title">${document.title}</h3>
 
-    <drop-target></drop-target>
-    <tag repeat.for="tag of document.root.children" tag.bind="tag"></tag>
-    <drop-target if.bind="document.root.children.length != 0"></drop-target>
+    <div class="drop-target">
+      <tag repeat.for="tag of document.root.children" tag.bind="tag"></tag>
+    </div>
   </div>
 </template>

@@ -1,8 +1,6 @@
 <template>
-  <require from="view/drop-target.html"></require>
-
   <div class="card">
-    <div class="card-header" click.delegate="edit()">
+    <div class="card-header ${!tag.acceptTags.length ? 'card-no-block' : ''}" click.delegate="edit()">
       ${tag.name}
     </div>
     <div class="tag-tools">
@@ -10,10 +8,8 @@
       <a href="#" click.delegate="clone()"><i class="fa fa-fw fa-clone"></i></a>
       <a href="#" click.delegate="remove()"><i class="fa fa-fw fa-trash-o"></i></a>
     </div>
-    <div class="card-block">
-      <drop-target></drop-target>
+    <div class="card-block drop-target" if.bind="tag.acceptTags.length">
       <tag repeat.for="tag of tag.children" tag.bind="tag"></tag>
-      <drop-target if.bind="tag.children.length != 0"></drop-target>
     </div>
   </div>
 </template>

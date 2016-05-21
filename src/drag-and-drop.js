@@ -28,8 +28,7 @@ export class DragAndDrop {
         return !el.classList.contains('active');
       },
       revertOnSpill: true,
-      delay: 200,
-      copy: true
+      delay: 200
     });
 
     this.trackDrop(dragApi);
@@ -39,10 +38,10 @@ export class DragAndDrop {
   trackDrop(dragApi) {
     dragApi.on('drop', (el, target, source) => {
       let parent;
-      if (target.parentElement.au.controller.viewModel.$parent.document) {
-        parent = target.parentElement.au.controller.viewModel.$parent.document.root;
+      if (target.parentElement.parentElement.au.controller.viewModel.document) {
+        parent = target.parentElement.parentElement.au.controller.viewModel.document.root;
       } else {
-        parent = target.parentElement.au.controller.viewModel.$parent.tag;
+        parent = target.parentElement.parentElement.au.controller.viewModel.tag;
       }
 
       dragApi.cancel();
@@ -50,7 +49,6 @@ export class DragAndDrop {
         let element = new source.tag.constructor();
         element.setParent(parent);
         parent.addChild(element, this.dropPos);
-        //this.eventAggregator.publish(new ElementDroppedEvent(element, parent, this.dropPos));
       }
     });
   }
@@ -65,6 +63,7 @@ export class DragAndDrop {
       this.dropPos = 0;
       for (let i = 0; i < container.children.length; i++) {
         if (container.children[i].classList.contains('gu-transit')) {
+          console.log(i);
           this.dropPos = i;
         }
       }

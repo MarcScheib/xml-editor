@@ -8,7 +8,7 @@ import {Document} from '../model/document';
 
 @inject(DragAndDrop)
 export class Editor {
-  showHelp = true;
+  showHelp = false;
   documents;
   activeDocument;
 

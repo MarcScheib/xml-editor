@@ -40,6 +40,8 @@
 .drop-target {
   border: 1px dashed #333;
   border-radius: .25rem;
+  margin: 1rem;
+  padding: 1rem;
 }
 
 tag .card-header {
@@ -47,9 +49,14 @@ tag .card-header {
   cursor: pointer;
 }
 
-tag .card-header {
+tag .card-header, tag .card-header:first-child {
   border-right: 1px solid #e5e5e5;
-  border-radius: .25rem 0 !important;
+  border-radius: .25rem 0;
+}
+
+tag .card-no-block {
+  border-radius: 0 !important;
+  border-bottom: 0 !important;
 }
 
 .tag-tools {

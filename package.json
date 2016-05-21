@@ -55,12 +55,12 @@
     "dependencies": {
       "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.2.1",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1.2.3",
-      "aurelia-dialog": "npm:aurelia-dialog@^0.6.0",
+      "aurelia-dialog": "npm:aurelia-dialog@^0.6.1",
       "aurelia-event-aggregator": "npm:aurelia-event-aggregator@^1.0.0-beta.1.2.1",
-      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.2.4",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.2.5",
       "aurelia-syntax-highlighter": "npm:aurelia-syntax-highlighter@^0.0.3",
       "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
-      "dragula": "npm:dragula@^3.7.0",
+      "dragula": "npm:dragula@^3.7.1",
       "font-awesome": "github:FortAwesome/font-awesome@^4.6.3",
       "jquery": "github:components/jquery@^2.2.1"
     },
