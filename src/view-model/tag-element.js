@@ -4,9 +4,9 @@ import {bindable, customElement} from 'aurelia-framework';
 export class Tag {
   @bindable
   tag;
-  
+
   edit() {
-    
+    this.tag.edit();
   }
 
   remove() {

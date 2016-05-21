@@ -1,17 +1,9 @@
 import dragula from 'dragula';
-import {inject} from 'aurelia-framework';
-import {EventAggregator} from 'aurelia-event-aggregator';
 
-//import {ElementDroppedEvent} from './events';
-
-@inject(EventAggregator)
 export class DragAndDrop {
-  eventAggregator;
   dragging = false;
 
-  constructor(eventAggregator) {
-    this.eventAggregator = eventAggregator;
-
+  constructor() {
     let dragApi = dragula({
       isContainer: el => {
         if (!el) {
@@ -63,7 +55,6 @@ export class DragAndDrop {
       this.dropPos = 0;
       for (let i = 0; i < container.children.length; i++) {
         if (container.children[i].classList.contains('gu-transit')) {
-          console.log(i);
           this.dropPos = i;
         }
       }

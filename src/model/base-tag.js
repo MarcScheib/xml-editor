@@ -4,6 +4,7 @@ export class BaseTag {
   parent;
   children;
   acceptTags;
+  isSelected;
 
   constructor(name, description) {
     this.name = name;
@@ -24,6 +25,20 @@ export class BaseTag {
     }
 
     return false;
+  }
+
+  edit() {
+    let document = this;
+    while (document.parent !== undefined) {
+      document = document.parent;
+    }
+
+    if (document.selectedTag !== undefined) {
+      document.selectedTag.isSelected = false;
+    }
+
+    document.selectedTag = this;
+    this.isSelected = true;
   }
 
   remove() {
