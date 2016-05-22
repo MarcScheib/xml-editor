@@ -1,5 +1,4 @@
 import {Discover} from './discover';
-import {Device} from './device';
 
 export class Document {
   title;
