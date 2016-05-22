@@ -17,7 +17,7 @@ System.config({
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
     "aurelia-dialog": "npm:aurelia-dialog@0.6.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.5",
-    "aurelia-syntax-highlighter": "npm:aurelia-syntax-highlighter@0.0.3",
+    "aurelia-syntax-highlighter": "npm:aurelia-syntax-highlighter@0.0.4",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
@@ -25,6 +25,7 @@ System.config({
     "dragula": "npm:dragula@3.7.1",
     "font-awesome": "github:FortAwesome/font-awesome@4.6.3",
     "jquery": "github:components/jquery@2.2.1",
+    "text": "github:systemjs/plugin-text@0.0.4",
     "github:jspm/nodelibs-assert@0.1.0": {
       "assert": "npm:assert@1.4.0"
     },
@@ -84,6 +85,9 @@ System.config({
       "aurelia-pal": "npm:aurelia-pal@1.0.0-beta.1.2.2",
       "aurelia-templating": "npm:aurelia-templating@1.0.0-beta.1.2.7"
     },
+    "npm:aurelia-event-aggregator@1.0.0-beta.1.2.1": {
+      "aurelia-logging": "npm:aurelia-logging@1.0.0-beta.1.2.1"
+    },
     "npm:aurelia-framework@1.0.0-beta.1.2.5": {
       "aurelia-binding": "npm:aurelia-binding@1.0.0-beta.1.3.6",
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.0.0-beta.1.2.3",
@@ -132,7 +136,7 @@ System.config({
       "aurelia-path": "npm:aurelia-path@1.0.0-beta.1.2.2",
       "aurelia-route-recognizer": "npm:aurelia-route-recognizer@1.0.0-beta.1.2.1"
     },
-    "npm:aurelia-syntax-highlighter@0.0.3": {
+    "npm:aurelia-syntax-highlighter@0.0.4": {
       "aurelia-framework": "npm:aurelia-framework@1.0.0-beta.1.2.5",
       "prismjs": "npm:prismjs@1.5.0"
     },

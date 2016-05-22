@@ -1,9 +1,12 @@
 {
+  "force": true,
+  "baseURL": ".",
+  "configPath": "./config.js",
   "bundles": {
     "dist/app-build": {
       "includes": [
-        "[*.js]",
-        "*.html!text"
+        "[**/*.js]",
+        "**/*.html!text"
       ],
       "options": {
         "inject": true,
@@ -14,16 +17,17 @@
     },
     "dist/aurelia": {
       "includes": [
-        "aurelia-framework",
         "aurelia-bootstrapper",
-        "aurelia-router",
-        "aurelia-templating-binding",
-        "aurelia-polyfills",
-        "aurelia-templating-resources",
-        "aurelia-templating-router",
+        "aurelia-dependency-injection",
+        "aurelia-dialog",
+        "aurelia-dialog/**/*.html!text",
+        "aurelia-dialog/**/*.css!text",
+        "aurelia-framework",
         "aurelia-loader-default",
-        "aurelia-history-browser",
-        "aurelia-logging-console"
+        "aurelia-logging-console",
+        "aurelia-templating-binding",
+        "aurelia-templating-resources",
+        "aurelia-syntax-highlighter"
       ],
       "options": {
         "inject": true,
@@ -35,7 +39,8 @@
     "dist/vendor": {
       "includes": [
         "jquery",
-        "bootstrap"
+        "bootstrap",
+        "dragula"
       ],
       "options": {
         "inject": true,
