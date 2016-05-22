@@ -1,9 +1,10 @@
 import {BaseTag} from './base-tag';
 import {Device} from './device';
+import {Properties} from './properties';
 import {User} from './user';
 
 export class Discover extends BaseTag {
-  acceptTags = [Device, User];
+  acceptTags = [Device, Properties, User];
 
   constructor() {
     super('<discover>', '');
