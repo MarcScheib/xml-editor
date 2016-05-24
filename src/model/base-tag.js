@@ -1,14 +1,14 @@
 export class BaseTag {
-  name;
-  description;
+  tagName;
+  tagDescription;
   parent;
   children;
   acceptTags;
   isSelected;
 
   constructor(name, description) {
-    this.name = name;
-    this.description = description;
+    this.tagName = name;
+    this.tagDescription = description;
     this.children = [];
     this.acceptTags = [];
   }
@@ -23,7 +23,7 @@ export class BaseTag {
 
   acceptsTag(tag) {
     for (let i = 0; i < this.acceptTags.length; i++) {
-      if (this.acceptTags[i].name === tag.constructor.name) {
+      if (this.acceptTags[i].tagName === tag.constructor.tagName) {
         return true;
       }
     }

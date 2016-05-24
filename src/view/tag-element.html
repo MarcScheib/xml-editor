@@ -1,7 +1,7 @@
 <template>
   <div class="card ${tag.isSelected ? 'card-selected' : ''}">
     <div class="card-header ${!tag.acceptTags.length ? 'card-no-block' : ''}" click.delegate="edit()">
-      ${tag.name}
+      ${tag.tagName}
     </div>
     <div class="tag-tools">
       <a href="#" click.delegate="edit()"><i class="fa fa-fw fa-edit"></i></a>
