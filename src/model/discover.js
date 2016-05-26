@@ -1,11 +1,12 @@
 import {BaseTag} from './base-tag';
+import {Cleanupgroup} from './cleanupgroup';
 import {Device} from './device';
 import {Properties} from './properties';
 import {Subgroup} from './subgroup';
 import {User} from './user';
 
 export class Discover extends BaseTag {
-  acceptTags = [Device, Properties, Subgroup, User];
+  acceptTags = [Cleanupgroup, Device, Properties, Subgroup, User];
 
   constructor() {
     super('<discover>', '');

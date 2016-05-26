@@ -1,5 +1,5 @@
 import {bindable, customElement} from 'aurelia-framework';
-
+import {Cleanupgroup} from '../model/cleanupgroup';
 import {Device} from '../model/device';
 import {MonitorOverride} from '../model/monitor-override';
 import {Properties} from '../model/properties';
@@ -14,7 +14,8 @@ export class TagbarElement {
   tags;
 
   constructor() {
-    this.tags = [new Device(), new MonitorOverride(), new Properties(), new Subgroup(),
+    this.tags = [new Cleanupgroup(), new Device(), new MonitorOverride(),
+      new Properties(), new Subgroup(),
       new User()];
   }
 }

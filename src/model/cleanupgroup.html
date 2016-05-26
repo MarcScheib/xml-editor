@@ -1,0 +1,28 @@
+<template>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Cleanupgroup Properties</h4>
+      <div class="card-text">
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="Simulates cleanup which only logs,
+which groups would have been deleted. Defaults to true.">
+            <input type="checkbox" checked.bind="simulate"> Simulate Clean Up
+          </label>
+        </div>
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="Removes empty groups from the inventory tree.
+          As those groups are shared with the weather map tree, they are only removed, if
+          groups are empty in both trees. Defaults to true.">
+            <input type="checkbox" checked.bind="inventory"> Clean Up Inventory Tree
+          </label>
+        </div>
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="Removes empty groups in the measurement tree.
+Defaults to true.">
+            <input type="checkbox" checked.bind="measurement"> Clean Up Measurement Tree
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
