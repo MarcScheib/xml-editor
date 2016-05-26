@@ -23,7 +23,7 @@ export class BaseTag {
 
   acceptsTag(tag) {
     for (let i = 0; i < this.acceptTags.length; i++) {
-      if (this.acceptTags[i].tagName === tag.constructor.tagName) {
+      if (this.acceptTags[i].name === tag.constructor.name) {
         return true;
       }
     }
