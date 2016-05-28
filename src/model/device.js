@@ -1,8 +1,9 @@
 import {BaseTag} from './base-tag';
+import {Delete} from './delete';
 import {MonitorOverride} from './monitor-override';
 
 export class Device extends BaseTag {
-  acceptTags = [MonitorOverride];
+  acceptTags = [Delete, MonitorOverride];
 
   constructor() {
     super('<device>', 'Devices can be added using the <device> element. They must not be nested as this violates the tree structure. Depending on the specified attributes, a single device or multiple devices can be discovered. The devices are added to the Inventory Tree and measurements are created automatically unless specified otherwise.');

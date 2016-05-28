@@ -1,10 +1,11 @@
 import {BaseTag} from './base-tag';
+import {Delete} from './delete';
 import {Device} from './device';
 import {Properties} from './properties';
 import {User} from './user';
 
 export class Subgroup extends BaseTag {
-  acceptTags = [Device, Properties, User];
+  acceptTags = [Delete, Device, Properties, User];
 
   name;
 

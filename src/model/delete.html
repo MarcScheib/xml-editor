@@ -1,0 +1,29 @@
+<template>
+  <div class="card">
+    <div class="card-block">
+      <h4 class="card-title">Delete Properties</h4>
+      <div class="card-text">
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="Simulates cleanup which only logs, which groups would have been deleted. Defaults to true.">
+            <input type="checkbox" checked.bind="simulate"> Simulate Clean Up
+          </label>
+        </div>
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="If this is set to false, the regular expression specified in the name attribute is checked on all tree nodes on the same tree level of the position of the <delete> element and one level below. If it is set to true, all sub tree elements are checked. Defaults to false.">
+            <input type="checkbox" checked.bind="recursive"> Recursive Delete
+          </label>
+        </div>
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="If this is set to true, only elements without child nodes are deleted. Defaults to true.">
+            <input type="checkbox" checked.bind="leavesonly"> Remove Leaves only
+          </label>
+        </div>
+        <div class="checkbox">
+          <label data-toggle="tooltip" title="If this is set to true, only disabled elements will be deleted. Defaults to false.">
+            <input type="checkbox" checked.bind="disabledonly"> Remove Disabled Elements only
+          </label>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
