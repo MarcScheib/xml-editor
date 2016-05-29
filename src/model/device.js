@@ -1,9 +1,10 @@
 import {BaseTag} from './base-tag';
 import {Delete} from './delete';
 import {MonitorOverride} from './monitor-override';
+import {Ping} from './ping';
 
 export class Device extends BaseTag {
-  acceptTags = [Delete, MonitorOverride];
+  acceptTags = [Delete, MonitorOverride, Ping];
 
   ip;
   auto;
