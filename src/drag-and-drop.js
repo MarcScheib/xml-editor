@@ -48,7 +48,9 @@ export class DragAndDrop {
   trackDraggingState(dragApi) {
     let handle;
     dragApi.on('drag', () => {
-      handle = setTimeout(() => this.dragging = true, 500);
+      handle = setTimeout(() => {
+        this.dragging = true;
+      }, 500);
     });
 
     dragApi.on('shadow', (el, container) => {

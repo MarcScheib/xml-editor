@@ -3,7 +3,7 @@ import {inject} from 'aurelia-framework';
 
 @inject(DialogController)
 export class XMLDialog {
-  constructor(controller){
+  constructor(controller) {
     this.controller = controller;
   }
 

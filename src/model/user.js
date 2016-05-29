@@ -11,9 +11,9 @@ export class User extends BaseTag {
 
   getXML() {
     if (this.file) {
-      return '<user file="' + this.file + '" fileencoding="' + this.fileencoding + '" />'
+      return '<user file="' + this.file + '" fileencoding="' + this.fileencoding + '" />';
     } else if (this.dbvariable) {
-      return '<user dbvariable="' + this.dbvariable + '" />'
+      return '<user dbvariable="' + this.dbvariable + '" />';
     }
 
     return '<user />';

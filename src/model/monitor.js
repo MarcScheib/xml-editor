@@ -13,7 +13,7 @@ export class Monitor extends BaseTag {
 
     xml += ' filtertype="' + this.filtertype + '"';
 
-    if (this.inverted != undefined) {
+    if (this.inverted !== undefined) {
       xml += ' inverted="' + this.inverted + '"';
     }
 

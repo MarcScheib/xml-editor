@@ -15,7 +15,7 @@ export class Subgroup extends BaseTag {
   }
 
   getXML() {
-    let xml = '<subgroup name="'+ this.name + '">';
+    let xml = '<subgroup name="' + this.name + '">';
 
     for (let i = 0; i < this.children.length; i++) {
       xml += this.children[i].getXML();
