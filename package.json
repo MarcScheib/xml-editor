@@ -53,15 +53,15 @@
   },
   "jspm": {
     "dependencies": {
-      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.0-beta.1.2.1",
-      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.0.0-beta.1.2.3",
-      "aurelia-dialog": "npm:aurelia-dialog@^0.6.1",
-      "aurelia-framework": "npm:aurelia-framework@^1.0.0-beta.1.2.5",
+      "aurelia-bootstrapper": "npm:aurelia-bootstrapper@^1.0.1",
+      "aurelia-dependency-injection": "npm:aurelia-dependency-injection@^1.2.0",
+      "aurelia-dialog": "npm:aurelia-dialog@^0.6.2",
+      "aurelia-framework": "npm:aurelia-framework@^1.0.7",
       "aurelia-syntax-highlighter": "npm:aurelia-syntax-highlighter@^0.0.4",
-      "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.2",
-      "dragula": "npm:dragula@^3.7.1",
-      "font-awesome": "github:FortAwesome/font-awesome@^4.6.3",
-      "jquery": "github:components/jquery@^2.2.1",
+      "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.5",
+      "dragula": "npm:dragula@^3.7.2",
+      "font-awesome": "github:FortAwesome/font-awesome@^4.7.0",
+      "jquery": "npm:jquery@^3.1.1",
       "text": "github:systemjs/plugin-text@^0.0.4"
     },
     "devDependencies": {

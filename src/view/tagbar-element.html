@@ -1,13 +1,13 @@
 <template>
   <require from="./tagbar-tag.html"></require>
 
-  <div class="card card-inverse card-dark">
-    <div class="card-block">
-      <h4 class="card-title">Tags</h4>
-      <p class="card-text" if.bind="help">Drag the tags and drop them on the editor wherever syntactically possible.</p>
+  <div class="list-group">
+    <div class="list-group-item list-group-item-action active">
+      <h6 class="list-group-item-heading">Tags</h6>
+      <p class="list-group-item-text" if.bind="help">Drag the tags and drop them on the editor wherever syntactically
+        possible.</p>
     </div>
-    <div class="list-group">
-      <tagbar-tag help.bind="help" tag.bind="tag" repeat.for="tag of tags" containerless></tagbar-tag>
-    </div>
+
+    <tagbar-tag help.bind="help" tag.bind="tag" repeat.for="tag of tags" containerless></tagbar-tag>
   </div>
 </template>
