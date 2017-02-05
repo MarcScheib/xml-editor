@@ -1,7 +1,7 @@
 var path = require('path');
 var paths = require('./paths');
 
-exports.base = function() {
+module.exports = function(modules) {
   return {
     filename: '',
     filenameRelative: '',
@@ -11,8 +11,8 @@ exports.base = function() {
     moduleIds: false,
     comments: false,
     compact: false,
-    code:true,
-    presets: [ 'es2015-loose', 'stage-1'],
+    code: true,
+    presets: [ ['es2015', { loose: true, modules: modules }], 'stage-1'],
     plugins: [
       'syntax-flow',
       'transform-decorators-legacy',
@@ -21,14 +21,3 @@ exports.base = function() {
   };
 };
 
-exports.system = function() {
-  var options = exports.base();
-  options.plugins.push('transform-es2015-modules-systemjs');
-  return options;
-};
-
-exports.es2015 = function() {
-  var options = exports.base();
-  options.presets = ['stage-1'];
-  return options;
-};
