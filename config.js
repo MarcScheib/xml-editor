@@ -12,13 +12,13 @@ System.config({
     "github:*": "jspm_packages/github/*",
     "npm:*": "jspm_packages/npm/*"
   },
-
   map: {
     "aurelia-bootstrapper": "npm:aurelia-bootstrapper@2.0.1",
     "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.3.0",
     "aurelia-dialog": "npm:aurelia-dialog@1.0.0-beta.3.0.1",
     "aurelia-framework": "npm:aurelia-framework@1.0.8",
-    "aurelia-syntax-highlighter": "npm:aurelia-syntax-highlighter@0.1.0",
+    "aurelia-pal-browser": "npm:aurelia-pal-browser@1.1.0",
+    "aurelia-syntax-highlighter": "npm:aurelia-syntax-highlighter@0.1.1",
     "babel": "npm:babel-core@5.8.38",
     "babel-runtime": "npm:babel-runtime@5.8.38",
     "bootstrap": "github:twbs/bootstrap@4.0.0-alpha.6",
@@ -137,7 +137,7 @@ System.config({
       "aurelia-path": "npm:aurelia-path@1.1.1",
       "aurelia-route-recognizer": "npm:aurelia-route-recognizer@1.1.0"
     },
-    "npm:aurelia-syntax-highlighter@0.1.0": {
+    "npm:aurelia-syntax-highlighter@0.1.1": {
       "aurelia-dependency-injection": "npm:aurelia-dependency-injection@1.3.0",
       "aurelia-metadata": "npm:aurelia-metadata@1.0.3",
       "aurelia-pal": "npm:aurelia-pal@1.2.0",
