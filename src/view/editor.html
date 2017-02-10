@@ -3,13 +3,14 @@
   <require from="view-model/document-element"></require>
   <require from="view-model/document-tools-element"></require>
 
-  <nav class="navbar navbar-full navbar-dark bg-inverse">
-    <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#collapse-navbar">
-      &#9776;
+  <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapse-navbar" aria-controls="collapse-navbar" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
     </button>
-    <div class="collapse navbar-toggleable-xs" id="collapse-navbar">
-      <a class="navbar-brand" href="#">XML Editor</a>
-      <form class="form-inline float-xs-right" style="padding: .375rem">
+    <a class="navbar-brand" href="#">XML Editor</a>
+
+    <div class="collapse navbar-collapse" id="collapse-navbar">
+      <form class="form-inline ml-auto">
         <div class="form-check">
           <label class="form-check-label text-white">
             <input class="form-check-input" type="checkbox" checked.bind="showHelp"> Show Help

@@ -22,7 +22,7 @@
 
 /** layout **/
 #editor-host {
-  margin-top: 15px;
+  margin-top: 68px;
 }
 
 .card-dark {
@@ -71,23 +71,6 @@ tag .card-selected {
 tag .card-selected > .card-header {
   background-color: #0275d8;
   color: #fff;
-}
-
-.tag-tools {
-  float: right;
-  padding: 10px 15px;
-}
-
-.tag-tools .fa-edit {
-  color: #26b725;
-}
-
-.tag-tools .fa-clone {
-  color: #0088c3;
-}
-
-.tag-tools .fa-trash-o {
-  color: #c30006;
 }
 
 ai-dialog-overlay.active {

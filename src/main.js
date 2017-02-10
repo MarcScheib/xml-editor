@@ -18,7 +18,7 @@ export function configure(aurelia) {
       config.useDefaults();
       config.settings.lock = true;
       config.settings.centerHorizontalOnly = true;
-      config.settings.startingZIndex = 1005;
+      config.settings.startingZIndex = 1035;
     })
     .plugin('aurelia-syntax-highlighter');
 

@@ -3,9 +3,8 @@
 
   <div class="list-group">
     <div class="list-group-item list-group-item-action active">
-      <h6 class="list-group-item-heading">Tags</h6>
-      <p class="list-group-item-text" if.bind="help">Drag the tags and drop them on the editor wherever syntactically
-        possible.</p>
+      <h5 class="mb-0">Tags</h5>
+      <small if.bind="help">Drag the tags and drop them on the editor wherever syntactically possible.</small>
     </div>
 
     <tagbar-tag help.bind="help" tag.bind="tag" repeat.for="tag of tags" containerless></tagbar-tag>

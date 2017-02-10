@@ -1,13 +1,14 @@
 <template>
   <div class="card ${tag.isSelected ? 'card-selected' : ''}">
     <div class="card-header ${!tag.acceptTags.length ? 'card-no-block' : ''}" click.delegate="edit()">
+      <div class="tag-tools float-right">
+        <a href="#" click.delegate="edit()"><i class="fa fa-fw fa-edit text-success"></i></a>
+        <a href="#" click.delegate="clone()"><i class="fa fa-fw fa-clone text-primary"></i></a>
+        <a href="#" click.delegate="remove()"><i class="fa fa-fw fa-trash-o text-danger"></i></a>
+      </div>
       ${tag.tagName}
     </div>
-    <div class="tag-tools">
-      <a href="#" click.delegate="edit()"><i class="fa fa-fw fa-edit"></i></a>
-      <a href="#" click.delegate="clone()"><i class="fa fa-fw fa-clone"></i></a>
-      <a href="#" click.delegate="remove()"><i class="fa fa-fw fa-trash-o"></i></a>
-    </div>
+
     <div class="card-block drop-target" if.bind="tag.acceptTags.length">
       <tag repeat.for="tag of tag.children" tag.bind="tag"></tag>
     </div>

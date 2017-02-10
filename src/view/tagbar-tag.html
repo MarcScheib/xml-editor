@@ -1,9 +1,8 @@
 <template bindable="tag, help">
   <div class="list-group-item drag-source" tag.bind="tag">
     <div>
-      <h6 class="list-group-item-heading">${tag.tagName}</h6>
-
-      <p class="list-group-item-text" if.bind="help">${tag.tagDescription}</p>
+      <h6 class="mb-0">${tag.tagName}</h6>
+      <small class="text-muted" if.bind="help">${tag.tagDescription}</small>
     </div>
   </div>
 </template>
