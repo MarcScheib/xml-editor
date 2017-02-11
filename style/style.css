@@ -25,11 +25,6 @@
   margin-top: 68px;
 }
 
-.card-dark {
-  background-color: #333;
-  border-color: #333;
-}
-
 /** editor **/
 .drag-source > div {
   cursor: grab;
@@ -54,14 +49,12 @@ tag .card-header {
 }
 
 tag .card-header, tag .card-header:first-child {
-  border-right: 1px dashed #e5e5e5;
   border-bottom-style: dashed;
-  border-radius: .25rem 0;
 }
 
-tag .card-no-block {
-  border-radius: 0 !important;
-  border-bottom: 0 !important;
+tag .card-header.card-no-block {
+  border-radius: 0;
+  border-bottom: 0;
 }
 
 tag .card-selected {
