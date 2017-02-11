@@ -1,10 +1,12 @@
 <template>
-  <require from="view-model/tagbar-element"></require>
-  <require from="view-model/document-element"></require>
-  <require from="view-model/document-tools-element"></require>
+  <require from="application/tagbar/tagbar-element"></require>
+  <require from="application/document/document-element"></require>
+  <require from="application/document/document-tools-element"></require>
 
   <nav class="navbar navbar-toggleable-md fixed-top navbar-inverse bg-inverse">
-    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#collapse-navbar" aria-controls="collapse-navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+            data-target="#collapse-navbar" aria-controls="collapse-navbar" aria-expanded="false"
+            aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
     <a class="navbar-brand" href="#">XML Editor</a>
@@ -30,7 +32,8 @@
       </div>
       <div class="col-lg-3">
         <document-tools document.bind="activeDocument"></document-tools>
-        <compose view-model.bind="activeDocument.selectedTag" if.bind="activeDocument && activeDocument.selectedTag"></compose>
+        <compose view-model.bind="activeDocument.selectedTag"
+                 if.bind="activeDocument && activeDocument.selectedTag"></compose>
       </div>
     </div>
   </div>

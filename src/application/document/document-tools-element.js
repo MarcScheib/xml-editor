@@ -1,7 +1,7 @@
 import {bindable, customElement, inject} from 'aurelia-framework';
 import {DialogService} from 'aurelia-dialog';
-import {formatXml} from '../util/util';
-import {XMLDialog} from './xml-dialog';
+import {formatXml} from '../../utilities/util';
+import {XMLDialog} from '../xml-dialog/xml-dialog';
 
 @customElement('document-tools')
 @inject(DialogService)
