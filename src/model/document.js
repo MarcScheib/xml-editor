@@ -14,6 +14,7 @@ export class Document {
   clear() {
     this.root = new Discover();
     this.root.setParent(this);
+    this.selectedTag = undefined;
   }
 
   addChild(element, pos) {

@@ -31,12 +31,16 @@ export class BaseTag {
     return false;
   }
 
-  edit() {
+  getDocument() {
     let document = this;
     while (document.parent !== undefined) {
       document = document.parent;
     }
+    return document;
+  }
 
+  edit() {
+    let document = this.getDocument();
     if (document.selectedTag !== undefined) {
       document.selectedTag.isSelected = false;
     }
@@ -46,9 +50,11 @@ export class BaseTag {
   }
 
   remove() {
+    let document = this.getDocument();
     for (let i = 0; i < this.parent.children.length; i++) {
       if (this.parent.children[i] === this) {
         this.parent.children.splice(i, 1);
+        document.selectedTag = undefined;
         break;
       }
     }
