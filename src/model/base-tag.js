@@ -54,7 +54,9 @@ export class BaseTag {
     for (let i = 0; i < this.parent.children.length; i++) {
       if (this.parent.children[i] === this) {
         this.parent.children.splice(i, 1);
-        document.selectedTag = undefined;
+        if (document.selectedTag === this) {
+          document.selectedTag = undefined;
+        }
         break;
       }
     }
